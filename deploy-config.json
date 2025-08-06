@@ -1,0 +1,30 @@
+{
+  "environments": {
+    "dev": {
+      "region": "us-east-1",
+      "stage": "dev",
+      "ecsConfig": {
+        "cpu": 512,
+        "memory": 1024,
+        "desiredCount": 1
+      },
+      "openSearchConfig": {
+        "instanceType": "t3.small.search",
+        "instanceCount": 1
+      }
+    },
+    "prod": {
+      "region": "us-east-1",
+      "stage": "prod",
+      "ecsConfig": {
+        "cpu": 1024,
+        "memory": 2048,
+        "desiredCount": 2
+      },
+      "openSearchConfig": {
+        "instanceType": "m6g.large.search",
+        "instanceCount": 2
+      }
+    }
+  }
+}
